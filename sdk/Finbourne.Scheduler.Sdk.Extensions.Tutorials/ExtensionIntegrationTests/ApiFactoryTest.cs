@@ -16,27 +16,50 @@ namespace Finbourne.Scheduler.Sdk.Extensions.Tutorials
             _factory = IntegrationTestApiFactoryBuilder.CreateApiFactory("secrets.json");
         }
 
-        /* Add this test for each Api within Finbourne.Scheduler.Sdk.Api
         [Test]
-        public void Create_XXXApi()
+        public void Create_ApplicationMetadataApi()
         {
-            var api = _factory.Api<XXXApi>();
+            var api = _factory.Api<ApplicationMetadataApi>();
 
             Assert.That(api, Is.Not.Null);
-            Assert.That(api, Is.InstanceOf<XXXApi>());
+            Assert.That(api, Is.InstanceOf<ApplicationMetadataApi>());
         }
-        */
 
-        /* Add this test for and interface of an Api within Finbourne.Scheduler.Sdk.Api
+        [Test]
+        public void Create_ImagesApi()
+        {
+            var api = _factory.Api<ImagesApi>();
+
+            Assert.That(api, Is.Not.Null);
+            Assert.That(api, Is.InstanceOf<ImagesApi>());
+        }
+
+        [Test]
+        public void Create_JobsApi()
+        {
+            var api = _factory.Api<JobsApi>();
+
+            Assert.That(api, Is.Not.Null);
+            Assert.That(api, Is.InstanceOf<JobsApi>());
+        }
+
+        [Test]
+        public void Create_SchedulesApi()
+        {
+            var api = _factory.Api<SchedulesApi>();
+
+            Assert.That(api, Is.Not.Null);
+            Assert.That(api, Is.InstanceOf<SchedulesApi>());
+        }
+
         [Test]
         public void Api_From_Interface()
         {
-            var api = _factory.Api<IXXXApi>();
+            var api = _factory.Api<ISchedulesApi>();
 
             Assert.That(api, Is.Not.Null);
-            Assert.That(api, Is.InstanceOf<IXXXApi>());
+            Assert.That(api, Is.InstanceOf<SchedulesApi>());
         }
-        */
 
         [Test]
         public void Invalid_Requested_Api_Throws()

@@ -20,4 +20,9 @@
   <ItemGroup>
     <ProjectReference Include="..\Finbourne.Scheduler.Sdk.Extensions\Finbourne.Scheduler.Sdk.Extensions.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <None Update="secrets.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 </Project>
