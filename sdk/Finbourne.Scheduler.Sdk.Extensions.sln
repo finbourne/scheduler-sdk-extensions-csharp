@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finbourne.Scheduler.Sdk.Extensions", "Finbourne.Scheduler.Sdk.Extensions\Finbourne.Scheduler.Sdk.Extensions.csproj", "{EE159F83-C571-47FB-B52C-7D0657B152DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finbourne.Scheduler.Sdk.Extensions.Tests", "Finbourne.Scheduler.Sdk.Extensions.Tests\Finbourne.Scheduler.Sdk.Extensions.Tests.csproj", "{3E616524-1A00-4A5D-B696-ABDE47C2E3F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finbourne.Scheduler.Sdk.Extensions.Tutorials", "Finbourne.Scheduler.Sdk.Extensions.Tutorials\Finbourne.Scheduler.Sdk.Extensions.Tutorials.csproj", "{F8083204-9B6F-4AEC-A43B-F0C2EA000509}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE159F83-C571-47FB-B52C-7D0657B152DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE159F83-C571-47FB-B52C-7D0657B152DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE159F83-C571-47FB-B52C-7D0657B152DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE159F83-C571-47FB-B52C-7D0657B152DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E616524-1A00-4A5D-B696-ABDE47C2E3F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E616524-1A00-4A5D-B696-ABDE47C2E3F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E616524-1A00-4A5D-B696-ABDE47C2E3F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E616524-1A00-4A5D-B696-ABDE47C2E3F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8083204-9B6F-4AEC-A43B-F0C2EA000509}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8083204-9B6F-4AEC-A43B-F0C2EA000509}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8083204-9B6F-4AEC-A43B-F0C2EA000509}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8083204-9B6F-4AEC-A43B-F0C2EA000509}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
