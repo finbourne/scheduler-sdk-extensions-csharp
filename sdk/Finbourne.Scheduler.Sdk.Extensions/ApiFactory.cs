@@ -83,6 +83,16 @@ namespace Finbourne.Scheduler.Sdk.Extensions
 
         private static Dictionary<Type, IApiAccessor> Init(Configuration configuration)
         {
+            // If some retry policy has already been assigned, use it.
+            // Users can combine their own policy with the default policy by using the .Wrap() method.
+            RetryConfiguration.RetryPolicy =
+                RetryConfiguration.RetryPolicy ?? PollyApiRetryHandler.DefaultRetryPolicyWithFallback;
+
+            // If some async retry policy has already been assigned, use it.
+            // Users can combine their own policy with the default policy by using the .WrapAsync() method.
+            RetryConfiguration.AsyncRetryPolicy =
+                RetryConfiguration.AsyncRetryPolicy ?? PollyApiRetryHandler.DefaultRetryPolicyWithFallbackAsync;
+
             var dict = new Dictionary<Type, IApiAccessor>();
             foreach (Type api in ApiTypes)
             {
@@ -91,6 +101,8 @@ namespace Finbourne.Scheduler.Sdk.Extensions
                     throw new Exception($"Unable to create type {api}");
                 }
 
+                // Replace the default implementation of the ExceptionFactory with a custom one defined by FINBOURNE
+                impl.ExceptionFactory = ExceptionHandler.CustomExceptionFactory;
                 var @interface = api.GetInterfaces()
                     .First(i => typeof(IApiAccessor).IsAssignableFrom(i));
 
