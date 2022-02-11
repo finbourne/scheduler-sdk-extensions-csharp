@@ -77,14 +77,14 @@ namespace Finbourne.Scheduler.Sdk.Extensions.Tests
                 {"clientId", "<clientId>"},
                 {"clientSecret", "<clientSecret>"},
                 {"apiUrl", "<apiUrl>"},
-            });
+            });            
             var apiConfiguration = ApiConfigurationBuilder.Build(_secretsFile);
             Assert.That(apiConfiguration.TokenUrl, Is.EqualTo("<tokenUrl>"));
             Assert.That(apiConfiguration.Username, Is.EqualTo("<username>"));
             Assert.That(apiConfiguration.Password, Is.EqualTo("<password>"));
             Assert.That(apiConfiguration.ClientId, Is.EqualTo("<clientId>"));
             Assert.That(apiConfiguration.ClientSecret, Is.EqualTo("<clientSecret>"));
-            Assert.That(apiConfiguration.ApiUrl, Is.EqualTo("<apiUrl>"));
+            Assert.That(apiConfiguration.ApiUrl, Is.EqualTo("<apiUrl>"));            
         }
         [Test]
         public void Throw_Exception_If_Secrets_File_Incomplete()
@@ -112,14 +112,14 @@ namespace Finbourne.Scheduler.Sdk.Extensions.Tests
             Environment.SetEnvironmentVariable("FBN_CLIENT_SECRET", "<env.clientSecret>");
             Environment.SetEnvironmentVariable("FBN_USERNAME", "<env.username>");
             Environment.SetEnvironmentVariable("FBN_PASSWORD", "<env.password>");
-            Environment.SetEnvironmentVariable("FBN_APP_NAME", "<env.app_name>");
+            Environment.SetEnvironmentVariable("FBN_APP_NAME", "<env.app_name>");            
             var apiConfiguration = ApiConfigurationBuilder.Build(null);
             Assert.That(apiConfiguration.TokenUrl, Is.EqualTo("<env.tokenUrl>"));
             Assert.That(apiConfiguration.Username, Is.EqualTo("<env.username>"));
             Assert.That(apiConfiguration.Password, Is.EqualTo("<env.password>"));
             Assert.That(apiConfiguration.ClientId, Is.EqualTo("<env.clientId>"));
             Assert.That(apiConfiguration.ClientSecret, Is.EqualTo("<env.clientSecret>"));
-            Assert.That(apiConfiguration.ApiUrl, Is.EqualTo("<env.apiUrl>"));
+            Assert.That(apiConfiguration.ApiUrl, Is.EqualTo("<env.apiUrl>"));            
         }
         [Test]
         public void Throw_Exception_If_Environment_Variables_Incomplete()
@@ -148,7 +148,7 @@ namespace Finbourne.Scheduler.Sdk.Extensions.Tests
                 { "api:Username", "<username>" },
                 { "api:Password", "<password>" },
                 { "api:ApplicationName", "<app_name>" }
-            };
+            };            
             var config = new ConfigurationBuilder()
                 .AddInMemoryCollection(settings)
                 .Build();
@@ -159,7 +159,7 @@ namespace Finbourne.Scheduler.Sdk.Extensions.Tests
             Assert.That(apiConfiguration.Password, Is.EqualTo("<password>"));
             Assert.That(apiConfiguration.ClientId, Is.EqualTo("<clientId>"));
             Assert.That(apiConfiguration.ClientSecret, Is.EqualTo("<clientSecret>"));
-            Assert.That(apiConfiguration.ApiUrl, Is.EqualTo("<apiUrl>"));
+            Assert.That(apiConfiguration.ApiUrl, Is.EqualTo("<apiUrl>"));            
         }
         [Test]
         public void Throw_Exception_If_Configuration_Section_Is_Null()
