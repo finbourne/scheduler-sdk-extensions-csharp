@@ -455,3 +455,4 @@ $RECYCLE.BIN/
 
 # API configuration
 secrets.json
+*.bak
