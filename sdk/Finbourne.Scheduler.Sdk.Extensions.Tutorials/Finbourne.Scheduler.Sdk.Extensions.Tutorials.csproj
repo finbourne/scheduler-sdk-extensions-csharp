@@ -12,7 +12,7 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- The highest stable version. -->
-    <PackageReference Include="Finbourne.Scheduler.Sdk" Version="*" />
+    <PackageReference Include="Finbourne.Scheduler.Sdk" Version="0.0.489" />
     <PackageReference Include="NUnit" Version="3.12.0" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.16.1" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />

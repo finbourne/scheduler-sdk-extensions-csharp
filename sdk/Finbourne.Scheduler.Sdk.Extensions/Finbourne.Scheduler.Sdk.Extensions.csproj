@@ -13,7 +13,7 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- The highest stable version. -->
-    <PackageReference Include="Finbourne.Scheduler.Sdk" Version="*" />
+    <PackageReference Include="Finbourne.Scheduler.Sdk" Version="0.0.489" />
     <PackageReference Include="JsonSubTypes" Version="1.8.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="6.0.0" />

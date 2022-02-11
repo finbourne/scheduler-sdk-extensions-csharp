@@ -52,7 +52,6 @@ namespace Finbourne.Scheduler.Sdk.Extensions
         public static ApiConfiguration BuildFromConfiguration(IConfigurationSection config)
         {
             if (config == null) throw new ArgumentNullException(nameof(config));
-            Console.WriteLine($"Loaded values from configuration");
 
             var apiConfig = new ApiConfiguration();
             config.Bind(apiConfig);
@@ -70,8 +69,7 @@ namespace Finbourne.Scheduler.Sdk.Extensions
         }        
 
         private static ApiConfiguration BuildFromEnvironmentVariables()
-        {
-            Console.WriteLine($"Loaded values from environment");
+        {            
             var apiConfig = new ApiConfiguration
             {
                 TokenUrl = Environment.GetEnvironmentVariable("FBN_TOKEN_URL") ?? Environment.GetEnvironmentVariable("fbn_token_url"),
@@ -97,8 +95,6 @@ namespace Finbourne.Scheduler.Sdk.Extensions
 
         private static ApiConfiguration BuildFromSecretsFile(string apiSecretsFilename)
         {
-            Console.WriteLine($"Loaded values from {apiSecretsFilename}");
-
             var apiConfig = new ApiConfiguration();
             if (apiSecretsFilename == null || !File.Exists(Path.Combine(Directory.GetCurrentDirectory(), apiSecretsFilename)))
             {
