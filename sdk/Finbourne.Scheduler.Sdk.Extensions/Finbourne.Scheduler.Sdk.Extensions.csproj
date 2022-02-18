@@ -2,18 +2,22 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <Version>0.1.0</Version>
-    <PackageId>Finbourne.Scheduler.Sdk.Extensions</PackageId>
+    <PackageId>Finbourne.Scheduler.Sdk.Extensions.Preview</PackageId>
     <Authors>engineering@finbourne.com</Authors>
     <Company>FINBOURNE Technology Limited</Company>
 	  <Product>LUSID</Product>
-	  <Description>LUSID automated job scheduler service SDK Extensions</Description>
-	  <RepositoryUrl>https://github.com/finbourne/finbourne-scheduler-sdk-extensions-csharp</RepositoryUrl>
+	  <Description>FINBOURNE automated job scheduler service SDK Extensions</Description>
+	  <RepositoryUrl>https://github.com/finbourne/scheduler-sdk-extensions-csharp-preview</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <DocumentationFile></DocumentationFile>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="../../LICENSE.md" Pack="true" PackagePath="LICENSE.md"/>
+  </ItemGroup>
+  <ItemGroup>
     <!-- The highest stable version. -->
-    <PackageReference Include="Finbourne.Scheduler.Sdk" Version="0.0.489" />
+    <PackageReference Include="Finbourne.Scheduler.Sdk.Preview" Version="0.0.489" />
     <PackageReference Include="JsonSubTypes" Version="1.8.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="6.0.0" />

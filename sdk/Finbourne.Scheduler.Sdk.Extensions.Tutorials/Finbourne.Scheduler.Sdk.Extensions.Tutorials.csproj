@@ -6,13 +6,13 @@
     <Authors>engineering@finbourne.com</Authors>
     <Company>FINBOURNE Technology Limited</Company>
 	  <Product>LUSID</Product>
-	  <Description>LUSID automated job scheduler service SDK Extensions - Tutorials project</Description>
-	  <RepositoryUrl>https://github.com/finbourne/finbourne-scheduler-sdk-extensions-csharp</RepositoryUrl>
+	  <Description>FINBOURNE automated job scheduler service SDK Extensions - Tutorials project</Description>
+	  <RepositoryUrl>https://github.com/finbourne/scheduler-sdk-extensions-csharp-preview</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
   </PropertyGroup>
   <ItemGroup>
     <!-- The highest stable version. -->
-    <PackageReference Include="Finbourne.Scheduler.Sdk" Version="0.0.489" />
+    <PackageReference Include="Finbourne.Scheduler.Sdk.Preview" Version="0.0.489" />
     <PackageReference Include="NUnit" Version="3.12.0" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.16.1" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />

@@ -453,6 +453,11 @@ $RECYCLE.BIN/
 !.vscode/launch.json
 !.vscode/extensions.json
 
-# API configuration
-secrets.json
-*.bak
+##
+## FINBOURNE
+##
+# secrets
+**/secrets*
+
+# Environments
+**/.env
