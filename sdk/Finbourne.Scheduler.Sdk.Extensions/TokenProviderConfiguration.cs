@@ -6,7 +6,7 @@ namespace Finbourne.Scheduler.Sdk.Extensions
     /// <summary>
     /// Custom class, derived from the auto-generated Configuration, which allows the access token to be pulled from an ITokenProvider when required
     ///</summary>
-    internal class TokenProviderConfiguration : Configuration
+    internal class TokenProviderConfiguration : Client.Configuration
     {
         private readonly ITokenProvider _tokenProvider;
 

@@ -13,7 +13,7 @@ namespace Finbourne.Scheduler.Sdk.Extensions.Tests
         {
             RetryConfiguration.RetryPolicy = null;
 
-            new ApiFactory(new Configuration());
+            new ApiFactory(new Client.Configuration());
 
             Assert.That(RetryConfiguration.RetryPolicy, Is.Not.Null);
             Assert.That(RetryConfiguration.RetryPolicy, Is.EqualTo(PollyApiRetryHandler.DefaultRetryPolicyWithFallback));
@@ -25,7 +25,7 @@ namespace Finbourne.Scheduler.Sdk.Extensions.Tests
             var testPolicy = Policy.HandleResult<IRestResponse>(response => true).Retry();
 
             RetryConfiguration.RetryPolicy = testPolicy;
-            var newFactory = new ApiFactory(new Configuration());
+            var newFactory = new ApiFactory(new Client.Configuration());
 
             Assert.That(RetryConfiguration.RetryPolicy, Is.EqualTo(testPolicy));
         }
@@ -35,7 +35,7 @@ namespace Finbourne.Scheduler.Sdk.Extensions.Tests
         {
             RetryConfiguration.AsyncRetryPolicy = null;
 
-            new ApiFactory(new Configuration());
+            new ApiFactory(new Client.Configuration());
 
             Assert.That(
                 RetryConfiguration.AsyncRetryPolicy,
@@ -48,7 +48,7 @@ namespace Finbourne.Scheduler.Sdk.Extensions.Tests
             var testPolicy = Policy.HandleResult<IRestResponse>(response => true).RetryAsync();
 
             RetryConfiguration.AsyncRetryPolicy = testPolicy;
-            var newFactory = new ApiFactory(new Configuration());
+            var newFactory = new ApiFactory(new Client.Configuration());
 
             Assert.That(RetryConfiguration.AsyncRetryPolicy, Is.EqualTo(testPolicy));
         }

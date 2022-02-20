@@ -61,7 +61,7 @@ namespace Finbourne.Scheduler.Sdk.Extensions
         /// Create a new factory using the specified configuration
         /// </summary>
         /// <param name="configuration">A set of configuration settings</param>
-        public ApiFactory(Configuration configuration)
+        public ApiFactory(Client.Configuration configuration)
         {
             if (configuration == null) throw new ArgumentNullException(nameof(configuration));
 
@@ -81,7 +81,7 @@ namespace Finbourne.Scheduler.Sdk.Extensions
             return api as TApi;
         }
 
-        private static Dictionary<Type, IApiAccessor> Init(Configuration configuration)
+        private static Dictionary<Type, IApiAccessor> Init(Client.Configuration configuration)
         {
             // If some retry policy has already been assigned, use it.
             // Users can combine their own policy with the default policy by using the .Wrap() method.
