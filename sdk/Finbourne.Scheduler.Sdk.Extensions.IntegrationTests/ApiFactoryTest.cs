@@ -4,7 +4,7 @@ using Finbourne.Scheduler.Sdk.Model;
 using NUnit.Framework;
 using System;
 
-namespace Finbourne.Scheduler.Sdk.Extensions.Tutorials
+namespace Finbourne.Scheduler.Sdk.Extensions.IntegrationTests
 {
     public class ApiFactoryTest
     {

@@ -6,7 +6,7 @@ using NUnit.Framework;
 using System.Linq;
 using System.Net;
 
-namespace Finbourne.Scheduler.Sdk.Extensions.Tutorials
+namespace Finbourne.Scheduler.Sdk.Extensions.IntegrationTests
 {
     [TestFixture]
     public class ApiExceptionExtensionsTest

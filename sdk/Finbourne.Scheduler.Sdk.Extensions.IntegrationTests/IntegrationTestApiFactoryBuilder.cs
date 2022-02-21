@@ -1,6 +1,6 @@
 using System.IO;
 
-namespace Finbourne.Scheduler.Sdk.Extensions.Tutorials
+namespace Finbourne.Scheduler.Sdk.Extensions.IntegrationTests
 {
     public  class IntegrationTestApiFactoryBuilder
     {

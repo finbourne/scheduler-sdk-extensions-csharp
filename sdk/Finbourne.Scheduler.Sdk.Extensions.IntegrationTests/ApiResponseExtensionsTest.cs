@@ -1,7 +1,7 @@
 using Finbourne.Scheduler.Sdk.Api;
 using NUnit.Framework;
 
-namespace Finbourne.Scheduler.Sdk.Extensions.Tutorials
+namespace Finbourne.Scheduler.Sdk.Extensions.IntegrationTests
 {
     [TestFixture]
     public class ApiResponseExtensionsTest

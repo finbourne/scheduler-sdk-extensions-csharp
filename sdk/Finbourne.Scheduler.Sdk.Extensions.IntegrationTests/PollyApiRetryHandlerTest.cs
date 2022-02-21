@@ -11,7 +11,7 @@ using Polly;
 using RestSharp;
 
 
-namespace Finbourne.Scheduler.Sdk.Extensions.Tutorials
+namespace Finbourne.Scheduler.Sdk.Extensions.IntegrationTests
 {
     [TestFixture]
     // This tests suite changes any unexpected behaviour with the retry mechanism in case of default template changes or SDK upgrades

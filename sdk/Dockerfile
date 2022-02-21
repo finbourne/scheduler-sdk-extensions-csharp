@@ -6,7 +6,7 @@ WORKDIR /usr/src
 COPY Finbourne.Scheduler.Sdk.Extensions.sln /usr/src/
 COPY Finbourne.Scheduler.Sdk.Extensions/Finbourne.Scheduler.Sdk.Extensions.csproj /usr/src/Finbourne.Scheduler.Sdk.Extensions/
 COPY Finbourne.Scheduler.Sdk.Extensions.Tests/Finbourne.Scheduler.Sdk.Extensions.Tests.csproj /usr/src/Finbourne.Scheduler.Sdk.Extensions.Tests/
-COPY Finbourne.Scheduler.Sdk.Extensions.Tutorials/Finbourne.Scheduler.Sdk.Extensions.Tutorials.csproj /usr/src/Finbourne.Scheduler.Sdk.Extensions.Tutorials/
+COPY Finbourne.Scheduler.Sdk.Extensions.IntegrationTests/Finbourne.Scheduler.Sdk.Extensions.IntegrationTests.csproj /usr/src/Finbourne.Scheduler.Sdk.Extensions.IntegrationTests/
 RUN dotnet restore Finbourne.Scheduler.Sdk.Extensions
 
 ENV FBN_SCHEDULER_API_URL ${FBN_SCHEDULER_API_URL}

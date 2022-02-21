@@ -9,7 +9,7 @@ using Newtonsoft.Json;
 using Polly;
 
 [assembly: InternalsVisibleTo("Finbourne.Scheduler.Sdk.Extensions.Tests")]
-[assembly: InternalsVisibleTo("Finbourne.Scheduler.Sdk.Extensions.Tutorials")]
+[assembly: InternalsVisibleTo("Finbourne.Scheduler.Sdk.Extensions.IntegrationTests")]
 
 namespace Finbourne.Scheduler.Sdk.Extensions
 {

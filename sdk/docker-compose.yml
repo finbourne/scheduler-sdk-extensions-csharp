@@ -2,10 +2,10 @@ version: "3"
 
 services:
 
-  scheduler-sdk-extensions-csharp-preview-test:
+  scheduler-sdk-extensions-csharp-test:
     build: .
-    container_name: scheduler-sdk-extensions-csharp-preview-test
-    image: finbourne/scheduler-sdk-extensions-csharp-preview-test
+    container_name: scheduler-sdk-extensions-csharp-test
+    image: finbourne/scheduler-sdk-extensions-csharp-test
     environment:
       - FBN_TOKEN_URL
       - FBN_USERNAME

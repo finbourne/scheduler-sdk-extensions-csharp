@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finbourne.Scheduler.Sdk.Ext
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finbourne.Scheduler.Sdk.Extensions.Tests", "Finbourne.Scheduler.Sdk.Extensions.Tests\Finbourne.Scheduler.Sdk.Extensions.Tests.csproj", "{3E616524-1A00-4A5D-B696-ABDE47C2E3F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finbourne.Scheduler.Sdk.Extensions.Tutorials", "Finbourne.Scheduler.Sdk.Extensions.Tutorials\Finbourne.Scheduler.Sdk.Extensions.Tutorials.csproj", "{F8083204-9B6F-4AEC-A43B-F0C2EA000509}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finbourne.Scheduler.Sdk.Extensions.IntegrationTests", "Finbourne.Scheduler.Sdk.Extensions.IntegrationTests\Finbourne.Scheduler.Sdk.Extensions.IntegrationTests.csproj", "{F8083204-9B6F-4AEC-A43B-F0C2EA000509}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
