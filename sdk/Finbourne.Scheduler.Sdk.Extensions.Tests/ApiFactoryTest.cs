@@ -25,7 +25,7 @@ namespace Finbourne.Scheduler.Sdk.Extensions.Tests
             ApiConfiguration apiConfig = new ApiConfiguration
             {
                 TokenUrl = "http://finbourne.com",
-                ApiUrl = "xyz"
+                SchedulerUrl = "xyz"
             };
 
             Assert.That(

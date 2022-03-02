@@ -39,7 +39,7 @@ namespace Finbourne.Scheduler.Sdk.Extensions.IntegrationTests
             _httpListener.Prefixes.Add(ListenerUriPrefix);
 
             var testApiConfig = IntegrationTestApiFactoryBuilder.CreateApiConfiguration("secrets.json");
-            testApiConfig.ApiUrl = ListenerUriPrefix;
+            testApiConfig.SchedulerUrl = ListenerUriPrefix;
 
             _apiFactory = new ApiFactory(testApiConfig);
 

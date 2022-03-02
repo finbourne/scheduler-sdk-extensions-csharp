@@ -33,9 +33,9 @@ namespace Finbourne.Scheduler.Sdk.Extensions
         public string ClientSecret { get;  set; }
 
         /// <summary>
-        /// Api Url
+        /// Scheduler Api Url
         /// </summary>
-        public string ApiUrl { get; set; }
+        public string SchedulerUrl { get; set; }
 
         /// <summary>
         /// Client Application name
@@ -53,7 +53,7 @@ namespace Finbourne.Scheduler.Sdk.Extensions
                    string.IsNullOrEmpty(Password) ||
                    string.IsNullOrEmpty(ClientId) ||
                    string.IsNullOrEmpty(ClientSecret) ||
-                   string.IsNullOrEmpty(ApiUrl);
+                   string.IsNullOrEmpty(SchedulerUrl);
         }
 
         /// <summary>
@@ -83,9 +83,9 @@ namespace Finbourne.Scheduler.Sdk.Extensions
             {
                 missingConfig.Add(nameof(ClientSecret));
             } 
-            if (string.IsNullOrEmpty(ApiUrl))
+            if (string.IsNullOrEmpty(SchedulerUrl))
             {
-                missingConfig.Add(nameof(ApiUrl));
+                missingConfig.Add(nameof(SchedulerUrl));
             }
             return missingConfig;            
         }

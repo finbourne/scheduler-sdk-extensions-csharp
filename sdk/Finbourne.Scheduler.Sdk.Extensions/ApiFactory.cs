@@ -40,16 +40,16 @@ namespace Finbourne.Scheduler.Sdk.Extensions
                 throw new UriFormatException($"Invalid Token Uri: {apiConfiguration.TokenUrl}");
             }
 
-            if (!Uri.TryCreate(apiConfiguration.ApiUrl, UriKind.Absolute, out var _))
+            if (!Uri.TryCreate(apiConfiguration.SchedulerUrl, UriKind.Absolute, out var _))
             {
-                throw new UriFormatException($"Invalid Uri: {apiConfiguration.ApiUrl}");
+                throw new UriFormatException($"Invalid Uri: {apiConfiguration.SchedulerUrl}");
             }
 
             // Create configuration
             var tokenProvider = new ClientCredentialsFlowTokenProvider(apiConfiguration);
             var configuration = new TokenProviderConfiguration(tokenProvider)
             {
-                BasePath = apiConfiguration.ApiUrl,
+                BasePath = apiConfiguration.SchedulerUrl,
             };
             
             configuration.DefaultHeaders.Add("X-LUSID-Application", apiConfiguration.ApplicationName);

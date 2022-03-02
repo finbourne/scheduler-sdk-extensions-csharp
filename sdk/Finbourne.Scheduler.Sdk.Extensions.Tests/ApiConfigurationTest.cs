@@ -100,7 +100,7 @@ namespace Finbourne.Scheduler.Sdk.Extensions.Tests
         public void ApiConfiguration_HasMissingConfig_Missing_ApiUrl_Returns_True()
         {
             ApiConfiguration config = GetApiConfiguration();
-            config.ApiUrl = String.Empty;
+            config.SchedulerUrl = String.Empty;
             Assert.IsTrue(config.HasMissingConfig());
         }
 
@@ -108,10 +108,10 @@ namespace Finbourne.Scheduler.Sdk.Extensions.Tests
         public void ApiConfiguration_MissingConfig_Missing_ApiUrl_Returns_Correct_String()
         {
             ApiConfiguration config = GetApiConfiguration();
-            config.ApiUrl = String.Empty;
+            config.SchedulerUrl = String.Empty;
             List<string> missingList = config.MissingConfig();
             Assert.That(missingList.Count, Is.EqualTo(1), "MissingConfig list contains one item");
-            Assert.That(missingList[0], Is.EqualTo(nameof(config.ApiUrl)), "MissingConfig list string correct");
+            Assert.That(missingList[0], Is.EqualTo(nameof(config.SchedulerUrl)), "MissingConfig list string correct");
         }
 
         [Test]
@@ -145,7 +145,7 @@ namespace Finbourne.Scheduler.Sdk.Extensions.Tests
         private ApiConfiguration GetApiConfiguration() {
             return new ApiConfiguration()
             {
-                ApiUrl = "https://sub-domain.lusid.com/api",
+                SchedulerUrl = "https://sub-domain.lusid.com/api",
                 ApplicationName = "Test application",
                 ClientId = "name-surname",
                 ClientSecret = "client-secret",
