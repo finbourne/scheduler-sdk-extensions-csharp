@@ -20,7 +20,7 @@ namespace Finbourne.Scheduler.Sdk.Extensions.Tests
         }
 
         [Test]
-        public void InvalidApiUrl_ThrowsException()
+        public void InvalidSchedulerUrl_ThrowsException()
         {
             ApiConfiguration apiConfig = new ApiConfiguration
             {
