@@ -27,7 +27,7 @@ namespace Finbourne.Scheduler.Sdk.Extensions.IntegrationTests
 
         private readonly JobRunResult _mockResponse = new JobRunResult("consoleOutputUrl", "runId",
             new ResourceId("scope", "code"), "name", DateTimeOffset.UtcNow, DateTimeOffset.UtcNow,
-            new Dictionary<string, string>(), new Dictionary<string, string>(), "jobStatus", "description",
+            DateTimeOffset.UtcNow, new Dictionary<string, string>(), new Dictionary<string, string>(), "jobStatus", "description",
             new ResourceId("scope", "code"), "resultUrl", "manuallyTriggereedBy", "command", "message");
 
 
