@@ -62,7 +62,7 @@ jobs:
           FBN_CLIENT_ID: ${{ secrets.FBN_CLIENT_ID }}
           FBN_CLIENT_SECRET: ${{ secrets.FBN_CLIENT_SECRET }}
           FBN_SCHEDULER_API_URL: ${{ secrets.FBN_SCHEDULER_API_URL }}
-          FBN_APP_NAME: ${{ secrets.FBN_CLIENT_ID }}
+          FBN_APP_NAME: ${{ secrets.FBN_APP_NAME }}
           FBN_ACCESS_TOKEN: ${{ secrets.FBN_ACCESS_TOKEN }}
         run: dotnet test --configuration Release --verbosity normal sdk/Finbourne.Scheduler.Sdk.Extensions.sln
 
