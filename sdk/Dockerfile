@@ -9,7 +9,4 @@ COPY Finbourne.Scheduler.Sdk.Extensions.Tests/Finbourne.Scheduler.Sdk.Extensions
 COPY Finbourne.Scheduler.Sdk.Extensions.IntegrationTests/Finbourne.Scheduler.Sdk.Extensions.IntegrationTests.csproj /usr/src/Finbourne.Scheduler.Sdk.Extensions.IntegrationTests/
 RUN dotnet restore Finbourne.Scheduler.Sdk.Extensions
 
-ENV FBN_SCHEDULER_API_URL ${FBN_SCHEDULER_API_URL}
-
-# ENTRYPOINT [ "/bin/bash" ]
-ENTRYPOINT dotnet test --configuration Release --verbosity normal Finbourne.Scheduler.Sdk.Extensions
+ENTRYPOINT dotnet test --configuration Release --verbosity normal
